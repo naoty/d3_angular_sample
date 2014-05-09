@@ -1,0 +1,19 @@
+{
+  "name": "d3_angular_sample",
+  "version": "0.0.0",
+  "authors": [
+    "Naoto Kaneko <naoty.k@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.6",
+    "angular": "~1.2.16"
+  }
+}

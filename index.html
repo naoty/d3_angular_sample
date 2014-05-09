@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="Sample">
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Angular Sample</title>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/d3/d3.js"></script>
+  <script src="dest/main.js"></script>
+  <script src="dest/angular/controllers/prices_controller.js"></script>
+  <script src="dest/angular/directives/d3_time_series_chart.js"></script>
+</head>
+<body ng-controller="PricesController">
+  <h1>D3 Angular Sample</h1>
+  <d3-time-series-chart data="prices"></d3-time-series-chart>
+</body>
+</html>

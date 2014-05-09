@@ -1,0 +1,19 @@
+{
+  "name": "d3_angular_sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "authors": [
+    "Naoto Kaneko <naoty.k@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "grunt": "~0.4.4",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
