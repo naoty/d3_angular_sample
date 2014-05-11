@@ -1,10 +1,26 @@
-path {
-  fill: none;
+path,
+circle {
   stroke: steelblue;
   stroke-width: 2px;
 }
 
-.axis path,
+path {
+  fill: none;
+}
+
+circle {
+  fill: #fff;
+}
+
+.area {
+  fill: rgba(176, 196, 222, 0.3);
+  stroke-width: 0;
+}
+
+.axis path {
+  display: none;
+}
+
 .axis line {
   stroke: #000;
   stroke-width: 1px;
@@ -16,11 +32,6 @@ path {
   font-size: 11px;
 }
 
-.x.axis path,
-.x.axis line {
-  display: none;
-}
-
-.y.axis .tick line {
+.axis .tick line {
   opacity: 0.1;
 }
