@@ -8,9 +8,10 @@
   <script src="dest/main.js"></script>
   <script src="dest/angular/controllers/prices_controller.js"></script>
   <script src="dest/angular/directives/d3_time_series_chart.js"></script>
+  <link rel="stylesheet" href="public/style.css" />
 </head>
 <body ng-controller="PricesController">
   <h1>D3 Angular Sample</h1>
-  <d3-time-series-chart data="prices"></d3-time-series-chart>
+  <d3-time-series-chart data="{{ prices }}" width="600" height="400"></d3-time-series-chart>
 </body>
 </html>
