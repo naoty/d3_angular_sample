@@ -34,9 +34,9 @@
         });
         svg.append("path").datum(data).attr("d", line);
         xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(data.length).tickFormat(d3.time.format("%m/%d"));
-        svg.append("g").attr("class", "axis").attr("transform", "translate(0, " + (height - padding) + ")").call(xAxis);
-        yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(data.length);
-        return svg.append("g").attr("class", "axis").attr("transform", "translate(" + padding + ", 0)").call(yAxis);
+        svg.append("g").attr("class", "x axis").attr("transform", "translate(0, " + (height - padding) + ")").call(xAxis);
+        yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(data.length).innerTickSize(-width).outerTickSize(0);
+        return svg.append("g").attr("class", "y axis").attr("transform", "translate(" + padding + ", 0)").call(yAxis);
       }
     };
   });

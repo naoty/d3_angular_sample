@@ -36,7 +36,7 @@ window.ngApp.directive "d3TimeSeriesChart", ->
       .ticks(data.length)
       .tickFormat(d3.time.format("%m/%d"))
     svg.append("g")
-      .attr("class", "axis")
+      .attr("class", "x axis")
       .attr("transform", "translate(0, #{height - padding})")
       .call(xAxis)
 
@@ -44,8 +44,10 @@ window.ngApp.directive "d3TimeSeriesChart", ->
       .scale(yScale)
       .orient("left")
       .ticks(data.length)
+      .innerTickSize(-width)
+      .outerTickSize(0)
     svg.append("g")
-      .attr("class", "axis")
+      .attr("class", "y axis")
       .attr("transform", "translate(#{padding}, 0)")
       .call(yAxis)
 

@@ -15,3 +15,12 @@ path {
   font-family: sans-serif;
   font-size: 11px;
 }
+
+.x.axis path,
+.x.axis line {
+  display: none;
+}
+
+.y.axis .tick line {
+  opacity: 0.1;
+}
